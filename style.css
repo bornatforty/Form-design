@@ -1,0 +1,53 @@
+* {
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-color: #4d97c1;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #f7f7f4;
+}
+::placeholder {
+	font-size: 11px;
+	color: #5a5d5e;
+}
+input, textarea {
+	width: 270px;
+	height: 30px;
+	border-color: #f7f7f4;
+	border-style: solid;
+}
+select {
+	width: 270px;
+	border-color: #f7f7f4;
+}
+input:focus {
+	border-color: #1a53af;
+}
+form {
+	width: 300px;
+}
+div {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 350px;
+	margin: 5px;
+}
+textarea#biography, textarea#affiliations, textarea#comments {
+	flex-grow: 2;
+}
+label {
+	padding-bottom: 5px;
+}
+@media only screen and (max-width: 768px) {
+	* {
+		display: flex;
+		box-sizing: border-box;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
